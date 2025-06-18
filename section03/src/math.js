@@ -6,6 +6,7 @@ export function sub(a, b) {
   return a - b;
 }
 
+//대표 가능
 export default function multiply(a, b) {
   return a * b;
 }
