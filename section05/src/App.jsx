@@ -4,6 +4,8 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import Button from "./components/Button";
 import { useState } from "react";
+import Bulb from "./components/Bulb";
+import Counter from "./components/Counter";
 
 //부모 컨포넌트
 function App() {
@@ -33,30 +35,12 @@ function App() {
   //   </>
   // );
 
-  const [count, setCount] = useState(0);
-  const [light, setLight] = useState("OFF");
   // console.log(count);
 
   return (
     <>
-      <div>
-        <h1>{light}</h1>
-        <button
-          onClick={() => {
-            setLight(light === "ON" ? "OFF" : "ON");
-          }}
-        >
-          전구 {light === "ON" ? "끄기" : "켜기"}
-        </button>
-      </div>
-      <h1>{count}</h1>
-      <button
-        onClick={() => {
-          setCount(count + 1);
-        }}
-      >
-        +
-      </button>
+      <Bulb />
+      <Counter />
     </>
   );
 }
