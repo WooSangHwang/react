@@ -6,7 +6,7 @@ import Button from "./components/Button";
 import { useState } from "react";
 import Bulb from "./components/Bulb";
 import Counter from "./components/Counter";
-
+import Register from "./components/Register";
 //부모 컨포넌트
 function App() {
   //components
@@ -37,10 +37,17 @@ function App() {
 
   // console.log(count);
 
+  // props state
+  // return (
+  //   <>
+  //     <Bulb />
+  //     <Counter />
+  //   </>
+  // );
+
   return (
     <>
-      <Bulb />
-      <Counter />
+      <Register />
     </>
   );
 }
