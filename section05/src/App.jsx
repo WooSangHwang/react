@@ -7,6 +7,8 @@ import { useState } from "react";
 import Bulb from "./components/Bulb";
 import Counter from "./components/Counter";
 import Register from "./components/Register";
+import HookExam from "./components/HookExam";
+
 //부모 컨포넌트
 function App() {
   //components
@@ -45,11 +47,16 @@ function App() {
   //   </>
   // );
 
-  return (
-    <>
-      <Register />
-    </>
-  );
+  // return (
+  //   <>
+  //     <Register />
+  //   </>
+  // );
+    return (
+        <>
+            <HookExam />
+        </>
+    );
 }
 
 export default App;
